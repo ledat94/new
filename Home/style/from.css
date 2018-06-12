@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+ p {
+	text-align:left;
+}
+
+h1{
+	font-size:2em;
+	font-family:serif;
+	color:#C08B9B;
+	text-align:center;
+}
+form,#top{
+	margin:auto;
+	width:420px;
+	color:#666;
+	padding:7px;
+	margin-bottom:15px;
+	border:3px solid #EEE9ED;
+	border-radius:15px;
+}
+form p ,#top p{
+	margin:7px 0 0;
+	padding:10px;
+	font-size:12px;
+	background:#EEE9ED;
+	border-radius:8px;
+	overflow:hidden;
+	clear:left;
+}
+#top p:first-child{
+	text-align:center;
+	margin:0;
+}
+form p:first-child{
+	margin:0;
+}
+#top p:last-child,form p:last-child{
+	text-align:center;
+}
+form p span{
+	width:8em;
+	margin:0px;
+	display:block;
+	float:left;
+}
+form p label input, form p select{
+	width:16em;
+	padding:3px;
+	margin:0px;
+	color:#666;
+	border:solid 1px #ccc;
+	background:#fff;
+	box-shadow:1px 1px 1px #fff;
+	border-radius:7px;
+}
+
+form p input[type="radio"]{
+	width:1em;
+	margin-left:1.5em;
+}
+form p span.radio{
+	display:block;
+	width:10em;
+	float:left;
+}
+form p span.radio label input{
+	margin-right:0.5em;
+}
+form p span.radio label:hover{
+	
+	font-weight:bold;
+}
+
+form p input[type="submit"],
+form p input[type="reset"],
+#top p input[type="button"]{
+	cursor:pointer;
+	font-size:130%;
+	font-weight:bold;
+	width:100px;
+	padding:4px 10px;
+	margin-right:0.5em;
+	color:#fff;
+	border:1px solid #bbb;
+	background:#C08B9B;
+	background:linear-gradient(#E7D6DB,#C08B9B);
+	border-radius:5px;
+	box-shadow:1px 1px 1px #fff;
+}
+form p input[type="submit"]:hover,#top p input[type="button"]:hover,
+form p input[type="reset"]:hover{
+	opacity:0.8;
+	
+}
+
+form.guide{
+	font-weight:bold;
+	font-size:12px;
+	text-align:center;
+	
+}
+
+form p input[type="checkbox"]{
+    width:auto;
+    
+}
+
+
+
+
+	

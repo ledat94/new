@@ -1,0 +1,235 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {
+	width:980px;
+	margin: 0 auto; 
+	padding: 0;
+	line-height: 1.4em;
+	font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	background-image:url(../images/sakura);
+	background-repeat:repeat;
+}
+
+header #top{
+	width: 980px;
+	padding-top: 20px;
+	overflow: hidden;
+
+}
+header #top h1 {
+	float:left;
+}
+nav {
+	padding-top: 90px;
+	float:right;
+}
+nav ul {
+	list-style-type: none;
+
+}
+nav ul li {
+	float: left;
+
+	text-align:center;
+	background-image:url(../images/background.png);
+	padding:15px 20px;
+	width:100px;
+	border:1px groove;
+	
+	border-color:#9CF;
+	
+	
+}
+nav ul li a{ text-decoration:none;
+			 font-weight:bold;
+			 color:#FFF;
+          
+}
+
+nav ul li a:hover{opacity:0.85;
+				text-shadow: 2px 2px 10px #cc0000;}
+				
+				
+#sub aside form input[type="submit"]{
+margin:10px;
+}				
+				
+
+
+/*---------------------JAVASCRIPT------------------------------*/
+#autorun ul li{list-style-type:none;}
+
+#autorun {
+	height:350px;
+	margin: 0 auto 10px auto;
+}
+#autorun ul {
+	list-style: none;
+	padding-left: 0;
+	overflow: hidden;
+}
+#autorun ul li {
+	display: none;
+	position: absolute;
+}
+#autorun ul li.now {
+	display: block;
+}
+
+/*-----------------------CONTENTS-----------------------------*/
+#contents{background:#FFF;
+		　width:980px;
+	    overflow:hidden;
+         clear:both;
+          }
+.slogan {display:flex;
+         -webkit-justify-content:space-around;
+         justify-content:space-around;}
+
+.slogan span{font-weight:bold;
+	     color:#F09;
+	     font-size:36px;
+			}
+.slogan h2{ line-height: 1.5em;
+            margin-top:0;
+	   }
+.slogan.nichi{float:right;
+              font-size: 10px;
+             }
+
+/*------------------------MAIN-------------------------------*/
+
+
+
+
+
+#main{width:790px;
+	  float:right;
+	  background-color:#FCC;
+	 
+     }
+
+#main h2{background-image: url(../images/bg.jpg);
+	     background-size:auto;
+         border-left:solid 10px #3DF108;
+	     margin-top:0;
+		 padding: 13px 30px 10px 20px;
+		
+		}
+#main h3{text-align:center;}
+#main img.pic{display: block;
+		      margin-left: auto; 
+			  margin-right: auto;
+             }
+#main #eat ul li{list-style-type:none}
+#main #eat .food {
+	      padding-left:0;}
+
+#main #eat .food img{display: block;
+		      margin-left: auto; 
+			  margin-right: auto;
+			  margin-top: 20px;
+	          margin-bottom: 25px;
+                   }
+#main #eat .food img:hover{
+transform:scale(1.1); 
+box-shadow:0px 0px 20px gray; 
+opacity: 1;
+}
+.food p,#main ol p{margin-right: 20px;}
+
+.picture_left{
+	margin:0 20px 40px 40px;
+	float:left;
+	
+}
+#travel p{margin-right: 30px;
+	      text-align:justify;
+		 }
+#readmore{background:#FFC;
+		  border-radius:5px;
+		  padding:4px;
+		  margin:10px 30px 20px auto;
+		  font-size:15px;
+		  font-style:italic;
+		  float:right;
+		  overflow:hidden;
+				
+					}
+
+/*-----------------------ASIDE---------------------------------*/
+
+#sub{width:180px;
+     float:left;
+	 text-align:center;
+	 font-family:"ＭＳ ゴシック", "MS Gothic", "Osaka－等幅", Osaka-mono, monospace;
+	 color:#666;
+	 background-color:#FCC;
+     padding-bottom: 9999px;
+	margin-bottom: -99999px;
+    font-weight: bolder;
+	overflow:hidden;}
+/*#sub aside {border-top:9px solid #F80409;}*/
+              
+
+#sub aside ul li{list-style-type:none;
+				 padding-left:0;}
+#sub ul li{margin-bottom:10px;
+           text-indent:-35px;}
+.roguin {
+    color:white;
+    background: red;
+    margin: 0 auto;  // căn giữa 
+}
+
+/*-----------------------FOOTER--------------------------------*/
+footer{width:980px;
+	   position: relative;
+       clear:both;
+	 
+		}
+footer img{position: relative;}
+footer #dat{position:absolute;
+			top:60px;
+           width:980px;
+			 text-align:center;
+}
+#pagetop {
+	margin-bottom: 0;
+	float: right;
+	font-size: 150%;
+
+}
+#pagetop a {
+	display: block;
+	min-height: 16px;
+	padding: 6px 0 6px 28px;
+	background-image: url(../images/pagetop.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+/*----------------------RESPONSIVE---------------------------------*/
+@media screen and (max-width:640px){
+	img{max-width:100%;
+	   }
+    nav{display:block;
+	    clear:both;
+		float:left;
+		padding-top:5px;
+		padding-left:auto;}
+    nav ul{display:block; margin-left: auto; 
+			  margin-right: auto;}
+	nav ul li{float:none;
+	          width:300px;
+			  margin-top:10px;
+			  padding:15px 20px 15px 20px;
+			  display: block;
+		      }
+    nav ul li:last-child{clear:both;
+	                     display:block;
+						 padding-right:20px;}
+	#sub{display:none;}
+	#main{float:left;}
+	#content{display:inline;}
+}
